@@ -24,8 +24,10 @@ function gridCreator(res){
 		}
 	}
 
-	$(".unmarkedPixel").mouseover(function(){
-		$(this).addClass('markedPixel');
+	$(".unmarkedPixel").mouseover(function(e){
+		if(e.buttons === 1 || e.buttons ===3){
+			$(this).addClass('markedPixel');
+		}
 	});
 }
 
