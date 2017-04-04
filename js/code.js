@@ -24,7 +24,7 @@ function gridCreator(res){
 		}
 	}
 
-	$(".unmarkedPixel").mouseover(function(e){
+	$(".unmarkedPixel").mouseenter(function(e){
 		if(e.buttons === 1 || e.buttons ===3){
 			$(this).addClass('markedPixel');
 		}
